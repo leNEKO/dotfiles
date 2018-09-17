@@ -28,8 +28,8 @@ function vscode_cfg(){
 function vscode_ext(){
     # extensions
     VS_EXT="vscode/extensions"
-    diff $VS_EXT <(code --list-extensions) | \
 
+    diff $VS_EXT <(code --list-extensions) |\
     while read c; do
 
         mode=${c:0:1}
@@ -48,3 +48,4 @@ function vscode_ext(){
 bash_cfg
 vscode_cfg
 vscode_ext
+exit 0
