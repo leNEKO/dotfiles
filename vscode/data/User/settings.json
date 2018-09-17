@@ -1,0 +1,39 @@
+{
+  "editor.fontFamily": "Fira code",
+  "editor.fontLigatures": true,
+  "editor.mouseWheelZoom": true,
+  // "window.menuBarVisibility": "toggle",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#FF4081",
+    "list.activeSelectionForeground": "#FF4081",
+    "list.inactiveSelectionForeground": "#FF4081",
+    "list.highlightForeground": "#FF4081",
+    "scrollbarSlider.activeBackground": "#FF408150",
+    "editorSuggestWidget.highlightForeground": "#FF4081",
+    "textLink.foreground": "#FF4081",
+    "progressBar.background": "#FF4081",
+    "pickerGroup.foreground": "#FF4081",
+    "tab.activeBorder": "#FF4081",
+    "notificationLink.foreground": "#FF4081"
+  },
+  "python.linting.pylintUseMinimalCheckers": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.jsonc": "jsonc",
+    "bashrc": "shellscript",
+    "profile": "shellscript"
+  },
+  "workbench.colorTheme": "Material Theme",
+  "editor.minimap.enabled": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "window.titleBarStyle": "custom"
+}
