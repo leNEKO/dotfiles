@@ -1,4 +1,4 @@
-# dotfiles
+# My Dotfiles
 
 Bash: profile, bashrc
 
