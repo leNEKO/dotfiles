@@ -35,5 +35,10 @@
   "git.enableSmartCommit": true,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",
+  "git.confirmSync": false,
+  "ruby.format": "rubocop",
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "window.zoomLevel": -1
 }

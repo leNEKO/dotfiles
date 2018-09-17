@@ -171,3 +171,6 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+
+# exercism shortcut
+alias exercism='. /path/to/exism.sh exercism'
