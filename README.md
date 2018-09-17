@@ -1,5 +1,5 @@
 # My Dotfiles
 
-Bash: profile, bashrc
+_Bash_: profile, bashrc
 
-VS code: settings, keybinding, extensions synchronisation
+_VS code_: settings, keybinding, extensions synchronisation
