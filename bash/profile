@@ -34,3 +34,6 @@ export GOPATH=$HOME/go
 
 # Composer bins
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+# Node Js global bins
+export PATH="~/.npm-global/bin:$PATH"
