@@ -1,6 +1,7 @@
 aaron-bond.better-comments
 be5invis.toml
 belfz.search-crates-io
+castwide.solargraph
 cerzat43.twigcs
 DavidAnson.vscode-markdownlint
 dawhite.mustache
@@ -18,6 +19,7 @@ kokororin.vscode-phpfmt
 mads-hartmann.bash-ide-vscode
 MehediDracula.php-namespace-resolver
 mikestead.dotenv
+misogi.ruby-rubocop
 mrmlnc.vscode-apache
 mrmlnc.vscode-scss
 MS-CEINTL.vscode-language-pack-fr
@@ -27,7 +29,6 @@ ms-vscode.Go
 ms-vscode.sublime-keybindings
 ms-vsliveshare.vsliveshare
 njpwerner.autodocstring
-rebornix.ruby
 redhat.java
 rust-lang.rust
 shakram02.bash-beautify
