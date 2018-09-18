@@ -3,7 +3,7 @@
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
   // "window.menuBarVisibility": "toggle",
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#FF4081",
     "list.activeSelectionForeground": "#FF4081",
@@ -29,7 +29,7 @@
     "bashrc": "shellscript",
     "profile": "shellscript"
   },
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "editor.minimap.enabled": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
