@@ -37,8 +37,6 @@
   "editor.renderWhitespace": "none",
   "window.titleBarStyle": "custom",
   "git.confirmSync": false,
-  "ruby.format": "rubocop",
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.intellisense": "rubyLocate",
-  "window.zoomLevel": -1
+  "window.zoomLevel": 0,
+  "editor.wordWrap": "on"
 }

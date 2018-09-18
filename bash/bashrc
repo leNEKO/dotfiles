@@ -173,4 +173,4 @@ export SCM_CHECK=true
 source "$BASH_IT"/bash_it.sh
 
 # exercism shortcut
-alias exercism='. /path/to/exism.sh exercism'
+alias exercism='. ~/dev/py/exism/exism.sh exercism'
