@@ -40,5 +40,7 @@
   "window.zoomLevel": 0,
   "editor.wordWrap": "on",
   "php.suggest.basic": false,
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "go.inferGopath": true,
+  "go.toolsGopath": "~/go"
 }
