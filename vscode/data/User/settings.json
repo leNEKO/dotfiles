@@ -38,5 +38,7 @@
   "window.titleBarStyle": "custom",
   "git.confirmSync": false,
   "window.zoomLevel": 0,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "php.suggest.basic": false,
+  "breadcrumbs.enabled": true
 }
