@@ -29,11 +29,11 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Go
-export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
 export GOPATH=$HOME/go
 
 # Composer bins
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin:$HOME/.composer/vendor/bin"
 
 # Node Js global bins
 export PATH="~/.npm-global/bin:$PATH"
