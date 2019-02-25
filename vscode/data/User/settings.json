@@ -1,22 +1,7 @@
 {
-  "editor.fontFamily": "Fira code",
+  "editor.fontFamily": "Operator Mono Lig Book",
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
-  // "window.menuBarVisibility": "toggle",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#FF4081",
-    "list.activeSelectionForeground": "#FF4081",
-    "list.inactiveSelectionForeground": "#FF4081",
-    "list.highlightForeground": "#FF4081",
-    "scrollbarSlider.activeBackground": "#FF408150",
-    "editorSuggestWidget.highlightForeground": "#FF4081",
-    "textLink.foreground": "#FF4081",
-    "progressBar.background": "#FF4081",
-    "pickerGroup.foreground": "#FF4081",
-    "tab.activeBorder": "#FF4081",
-    "notificationLink.foreground": "#FF4081"
-  },
   "python.linting.pylintUseMinimalCheckers": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.snippetSuggestions": "top",
@@ -27,9 +12,10 @@
   "files.associations": {
     "*.jsonc": "jsonc",
     "bashrc": "shellscript",
-    "profile": "shellscript"
+    "profile": "shellscript",
+    ".env.*": "dotenv"
   },
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Gloom Contrast (rainglow)",
   "editor.minimap.enabled": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
@@ -38,9 +24,39 @@
   "window.titleBarStyle": "custom",
   "git.confirmSync": false,
   "window.zoomLevel": 0,
-  "editor.wordWrap": "on",
-  "php.suggest.basic": false,
+  "editor.wordWrap": "wordWrapColumn",
   "breadcrumbs.enabled": true,
   "go.inferGopath": true,
-  "go.toolsGopath": "~/go"
+  "go.toolsGopath": "~/go",
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.intellisense": "rubyLocate",
+  "rust.rustup": {
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "nightlyToolchain": "nightly-x86_64-unknown-linux-gnu"
+  },
+  "rust.mode": "rls",
+  "rust.rls": {
+    "useRustfmt": true
+  },
+  "ruby.useLanguageServer": true,
+  "[ruby]": {
+    "editor.tabSize": 2
+  },
+  "terminal.integrated.fontFamily": "Fira code",
+  "terminal.integrated.fontSize": 12,
+  "emmet.excludeLanguages": ["markdown", "php"],
+  "logViewer.watch": [
+    {
+      "title": "Symfony",
+      "pattern": "var/log/*.log"
+    }
+  ],
+  "namespaceResolver.sortNatural": true,
+  "namespaceResolver.sortAlphabetically": true,
+  "debug.inlineValues": true,
+  "workbench.iconTheme": "material-icon-theme"
 }
