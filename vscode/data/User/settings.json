@@ -27,9 +27,9 @@
   "files.associations": {
     "*.jsonc": "jsonc",
     "bashrc": "shellscript",
-    "profile": "shellscript"
+    "profile": "shellscript",
+    ".env.*": "dotenv"
   },
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "editor.minimap.enabled": false,
   "git.autofetch": true,
   "git.enableSmartCommit": true,
@@ -42,5 +42,21 @@
   "php.suggest.basic": false,
   "breadcrumbs.enabled": true,
   "go.inferGopath": true,
-  "go.toolsGopath": "~/go"
+  "go.toolsGopath": "~/go",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "phpcs.showSources": true,
+  "phpcs.standard": "./phpcs.xml",
+  "phpcs.executablePath": "./vendor/bin/phpcs",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "rest-client.enableTelemetry": false,
+  "rest-client.fontSize": 10,
+  "rest-client.previewResponseInUntitledDocument": true,
+  "namespaceResolver.sortNatural": true,
+  "namespaceResolver.sortAlphabetically": true,
+  "emmet.includeLanguages": {
+    "smarty": "tpl"
+  }
 }
