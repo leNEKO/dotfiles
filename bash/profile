@@ -25,6 +25,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin/:$PATH"
 fi
 
+# dev scripts
+SCRIPTS_PATH="$HOME/dev/script"
+if [ -d $SCRIPTS_PATH ] ; then
+    PATH="$SCRIPTS_PATH:$PATH"
+fi
+
 # Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 

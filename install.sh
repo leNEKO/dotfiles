@@ -6,7 +6,7 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # bash
 function bash_cfg(){
-    for f in $(fd . -t f bash); do
+    for f in $(~/.cargo/bin/fd . -t f bash); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
@@ -18,7 +18,7 @@ function vscode_cfg(){
     # config files
     VS_DIR=$(echo ~/.config/Code)
     VS_DATA="vscode/data"
-    for f in $(fd . -t f $VS_DATA); do
+    for f in $(~/.cargo/bin/fd . -t f $VS_DATA); do
         in=$DIR/$f
         out=$VS_DIR/${f/$VS_DATA\/}
         ln -sfv $in $out

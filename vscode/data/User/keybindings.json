@@ -3,5 +3,21 @@
   {
     "key": "ctrl+shift+t",
     "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "ctrl+meta+left",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "alt+6",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+meta+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "alt+8",
+    "command": "-workbench.action.navigateForward"
   }
 ]
