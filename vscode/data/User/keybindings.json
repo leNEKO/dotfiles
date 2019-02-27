@@ -3,5 +3,9 @@
   {
     "key": "ctrl+shift+t",
     "command": "workbench.action.tasks.test"
+  },
+  {
+    "key": "ctrl+meta+left",
+    "command": "workbench.action.navigateBack"
   }
 ]
