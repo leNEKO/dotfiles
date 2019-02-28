@@ -16,7 +16,14 @@
   "editor.renderWhitespace": "none",
   "editor.snippetSuggestions": "top",
   "editor.wordWrap": "wordWrapColumn",
-  "emmet.excludeLanguages": ["markdown", "php"],
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "smarty": "html"
+  },
   "files.associations": {
     "*.jsonc": "jsonc",
     ".env.*": "dotenv",
@@ -59,6 +66,13 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Codecourse Contrast (rainglow)",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#000",
+    "statusBar.foreground": "#DDD",
+    "statusBar.noFolderBackground": "#333",
+    "statusBar.noFolderForeground": "#fff"
+  },
   "namespaceResolver.leadingSeparator": true,
-  "php.suggest.basic": false
+  "php.suggest.basic": false,
+  "phpcs.standard": "PSR2"
 }

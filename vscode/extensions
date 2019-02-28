@@ -2,6 +2,7 @@ be5invis.toml
 belfz.search-crates-io
 berublan.vscode-log-viewer
 cerzat43.twigcs
+christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer-2
 DavidAnson.vscode-markdownlint
 dawhite.mustache
@@ -9,11 +10,12 @@ daylerees.rainglow
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
-esbenp.prettier-vscode
 felixfbecker.php-debug
 felixfbecker.php-intellisense
 felixfbecker.php-pack
 idleberg.icon-fonts
+ikappas.phpcs
+imperez.smarty
 kalitaalexey.vscode-rust
 kokororin.vscode-phpfmt
 mads-hartmann.bash-ide-vscode
