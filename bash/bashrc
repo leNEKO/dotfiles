@@ -169,10 +169,5 @@ export SCM_CHECK=true
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
-# exercism shortcut
-alias exercism='. ~/dev/py/exism/exism.sh exercism'
-
-# composer
-alias composer='~/bin/composer.phar'
-
-
+DOT_FILES="$HOME/dev/dotfiles/bash"
+source "$DOT_FILES"/aliases

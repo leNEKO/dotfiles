@@ -1,62 +1,63 @@
 {
-  "editor.fontFamily": "Fira code",
-  "editor.fontLigatures": true,
-  "editor.mouseWheelZoom": true,
-  // "window.menuBarVisibility": "toggle",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#FF4081",
-    "list.activeSelectionForeground": "#FF4081",
-    "list.inactiveSelectionForeground": "#FF4081",
-    "list.highlightForeground": "#FF4081",
-    "scrollbarSlider.activeBackground": "#FF408150",
-    "editorSuggestWidget.highlightForeground": "#FF4081",
-    "textLink.foreground": "#FF4081",
-    "progressBar.background": "#FF4081",
-    "pickerGroup.foreground": "#FF4081",
-    "tab.activeBorder": "#FF4081",
-    "notificationLink.foreground": "#FF4081"
+  "[ruby]": {
+    "editor.tabSize": 2
   },
-  "python.linting.pylintUseMinimalCheckers": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.snippetSuggestions": "top",
+  "breadcrumbs.enabled": true,
+  "debug.inlineValues": true,
+  "editor.fontFamily": "Operator Mono Lig Book",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.fontSize": 14,
-  "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.snippetSuggestions": "top",
+  "editor.wordWrap": "wordWrapColumn",
+  "emmet.excludeLanguages": ["markdown", "php"],
   "files.associations": {
     "*.jsonc": "jsonc",
+    ".env.*": "dotenv",
     "bashrc": "shellscript",
     "profile": "shellscript",
     ".env.*": "dotenv"
   },
-  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "none",
-  "window.titleBarStyle": "custom",
   "git.confirmSync": false,
-  "window.zoomLevel": 0,
-  "editor.wordWrap": "on",
-  "php.suggest.basic": false,
-  "breadcrumbs.enabled": true,
+  "git.enableSmartCommit": true,
   "go.inferGopath": true,
   "go.toolsGopath": "~/go",
-  "diffEditor.ignoreTrimWhitespace": true,
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
-  "phpcs.showSources": true,
-  "phpcs.standard": "./phpcs.xml",
-  "phpcs.executablePath": "./vendor/bin/phpcs",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "rest-client.enableTelemetry": false,
-  "rest-client.fontSize": 10,
-  "rest-client.previewResponseInUntitledDocument": true,
-  "namespaceResolver.sortNatural": true,
+  "logViewer.watch": [
+    {
+      "pattern": "var/log/*.log",
+      "title": "Symfony"
+    }
+  ],
   "namespaceResolver.sortAlphabetically": true,
-  "emmet.includeLanguages": {
-    "smarty": "tpl"
-  }
+  "namespaceResolver.sortNatural": true,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.useLanguageServer": true,
+  "rust.mode": "rls",
+  "rust.rls": {
+    "useRustfmt": true
+  },
+  "rust.rustup": {
+    "nightlyToolchain": "nightly-x86_64-unknown-linux-gnu",
+    "toolchain": "stable-x86_64-unknown-linux-gnu"
+  },
+  "terminal.integrated.fontFamily": "Fira code",
+  "terminal.integrated.fontSize": 12,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Codecourse Contrast (rainglow)",
+  "workbench.iconTheme": "material-icon-theme"
 }
