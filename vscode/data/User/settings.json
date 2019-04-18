@@ -74,5 +74,7 @@
   },
   "namespaceResolver.leadingSeparator": true,
   "php.suggest.basic": false,
-  "phpcs.standard": "PSR2"
+  "phpcs.standard": "PSR2",
+  "php.validate.enable": false,
+  "php.format.codeStyle": "PSR-2",
 }
