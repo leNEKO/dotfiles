@@ -10,6 +10,7 @@ Plug 'airblade/vim-gitgutter'
 " Feature
 Plug 'junegunn/fzf' " fuzzy search
 Plug 'tpope/vim-surround' " quoting/parenthesis
+Plug 'ajh17/vimcompletesme' " autocomplete
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -24,9 +25,11 @@ Plug 'joonty/vdebug'
 " Initialize plugin system
 call plug#end()
 
+" Setting
 set nu
 set updatetime=100
 set mouse=a
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " Theme
 colo gruvbox

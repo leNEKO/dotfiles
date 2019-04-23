@@ -4,14 +4,27 @@
 export DIR
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# bash / vim
+# cli tools
+function tools_cfg(){
+    sudo apt install -y \
+        fzf ripgrep fd-find \
+        vim curl
+}
+
+# bash
 function bash_cfg(){
     for f in $(fd . -t f bash); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
     done
+}
+
+# vim
+function vim_cfg(){
     # Install vim plugins
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     vim +'PlugInstall --sync' +qa
 }
 
@@ -48,7 +61,9 @@ function vscode_ext(){
 }
 
 function main(){
+    tools_cfg
     bash_cfg
+    vim_cfg
     vscode_cfg
     vscode_ext
     exit 0
