@@ -4,7 +4,7 @@
 export DIR
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# bash
+# bash / vim
 function bash_cfg(){
     for f in $(fd . -t f bash); do
         in="$DIR/$f"
