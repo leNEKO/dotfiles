@@ -20,7 +20,6 @@ Plug 'morhetz/gruvbox'
 " PHP
 Plug 'stanangeloff/php.vim'
 Plug 'shawncplus/phpcomplete.vim'
-Plug 'joonty/vdebug'
 
 " Initialize plugin system
 call plug#end()
@@ -34,14 +33,4 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Theme
 colo gruvbox
 set bg=dark
-
-" Vdebug
-if !exists('g:vdebug_options')
-  let g:vdebug_options = {}
-endif
-if !exists('g:vdebug_options.path_maps')
-  let g:vdebug_options.path_maps = {}
-endif
-
-let g:vdebug_options.path_maps = {'/var/www/bettr': '/home/neko/dev/bettr'}
 
