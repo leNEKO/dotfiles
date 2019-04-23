@@ -11,6 +11,8 @@ function bash_cfg(){
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
     done
+    # Install vim plugins
+    vim +'PlugInstall --sync' +qa
 }
 
 # vscode
