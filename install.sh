@@ -64,8 +64,10 @@ function main(){
     tools_cfg
     bash_cfg
     vim_cfg
-    vscode_cfg
-    vscode_ext
+    if hash code 2>/dev/null; then
+        vscode_cfg
+        vscode_ext
+    fi
     exit 0
 }
 
