@@ -47,7 +47,13 @@ function vscode_ext(){
     done
 }
 
-bash_cfg
-vscode_cfg
-vscode_ext
-exit 0
+function main(){
+    bash_cfg
+    vscode_cfg
+    vscode_ext
+    exit 0
+}
+
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    main "$@"
+fi
