@@ -7,5 +7,9 @@
   {
     "key": "ctrl+meta+left",
     "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+meta+right",
+    "command": "workbench.action.navigateForward"
   }
 ]

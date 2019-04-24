@@ -1,6 +1,6 @@
+atlassian.atlascode
 be5invis.toml
 belfz.search-crates-io
-berublan.vscode-log-viewer
 cerzat43.twigcs
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer-2
@@ -10,14 +10,18 @@ daylerees.rainglow
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
+EFanZh.graphviz-preview
 felixfbecker.php-debug
 felixfbecker.php-intellisense
 felixfbecker.php-pack
+GitHub.vscode-pull-request-github
+hangxingliu.vscode-awk-hint
+humao.rest-client
 idleberg.icon-fonts
 ikappas.phpcs
 imperez.smarty
 kalitaalexey.vscode-rust
-kokororin.vscode-phpfmt
+luggage66.AWK
 mads-hartmann.bash-ide-vscode
 MehediDracula.php-namespace-resolver
 mikestead.dotenv
@@ -34,7 +38,9 @@ PKief.material-icon-theme
 rebornix.ruby
 robinbentley.sass-indented
 rust-lang.rust
+sandy081.todotasks
 shakram02.bash-beautify
 shanoor.vscode-nginx
+vncz.vscode-apielements
 wcwhitehead.bootstrap-3-snippets
 whatwedo.twig
