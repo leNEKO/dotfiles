@@ -1,0 +1,36 @@
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" GIT
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" Feature
+Plug 'junegunn/fzf' " fuzzy search
+Plug 'tpope/vim-surround' " quoting/parenthesis
+Plug 'ajh17/vimcompletesme' " autocomplete
+
+" UI
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+
+" PHP
+Plug 'stanangeloff/php.vim'
+Plug 'shawncplus/phpcomplete.vim'
+
+" Initialize plugin system
+call plug#end()
+
+" Setting
+set nu
+set updatetime=100
+set mouse=a
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" Theme
+colo gruvbox
+set bg=dark
+
