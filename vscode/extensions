@@ -1,3 +1,4 @@
+atlassian.atlascode
 ahmadawais.shades-of-purple
 be5invis.toml
 belfz.search-crates-io
@@ -10,10 +11,12 @@ daylerees.rainglow
 DEVSENSE.phptools-vscode
 eamodio.gitlens
 EditorConfig.EditorConfig
+EFanZh.graphviz-preview
 felixfbecker.php-debug
 felixfbecker.php-intellisense
 felixfbecker.php-pack
 GitHub.vscode-pull-request-github
+hangxingliu.vscode-awk-hint
 hangxingliu.vscode-nginx-conf-hint
 humao.rest-client
 idleberg.icon-fonts
@@ -21,6 +24,7 @@ ikappas.phpcs
 imperez.smarty
 jakebathman.mysql-syntax
 kalitaalexey.vscode-rust
+luggage66.AWK
 mads-hartmann.bash-ide-vscode
 MehediDracula.php-namespace-resolver
 mikestead.dotenv
@@ -35,7 +39,9 @@ PKief.material-icon-theme
 rebornix.ruby
 robinbentley.sass-indented
 rust-lang.rust
+sandy081.todotasks
 shakram02.bash-beautify
 shanoor.vscode-nginx
+vncz.vscode-apielements
 wcwhitehead.bootstrap-3-snippets
 whatwedo.twig

@@ -13,9 +13,12 @@
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "top",
-  "editor.wordWrap": "wordWrapColumn",
+  "editor.rulers": [
+    80,
+    120
+  ],
   "emmet.excludeLanguages": [
     "markdown",
     "php"
@@ -28,7 +31,8 @@
     "*.jsonc": "jsonc",
     ".env.*": "dotenv",
     "bashrc": "shellscript",
-    "profile": "shellscript"
+    "profile": "shellscript",
+    ".env.*": "dotenv"
   },
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
@@ -38,7 +42,7 @@
   "go.toolsGopath": "~/go",
   "logViewer.watch": [
     {
-      "pattern": "var/log/*.log",
+      "pattern": "var/log*/*.log",
       "title": "Symfony"
     }
   ],
@@ -75,6 +79,24 @@
   "namespaceResolver.leadingSeparator": true,
   "php.suggest.basic": false,
   "phpcs.standard": "PSR2",
-  "php.validate.enable": false,
-  "php.format.codeStyle": "PSR-2",
+  "phpcs.executablePath": "/usr/bin/phpcs",
+  "jira-plugin.workingProject": "WIZ",
+  "jira-plugin.baseUrl": "https://wizaplace.atlassian.net",
+  "jira-plugin.username": "nicolas.masson@wizacha.com",
+  "atlascode.jira.workingSite": {
+    "id": "65c760bb-0ae6-48fd-9738-f374eeb691d6",
+    "name": "wizaplace",
+    "scopes": [
+      "manage:jira-project",
+      "write:jira-work",
+      "read:jira-work",
+      "read:jira-user"
+    ],
+    "avatarUrl": "https://site-admin-avatar-cdn.prod.public.atl-paas.net/avatars/240/triangle.png"
+  },
+  "atlascode.jira.workingProject": {
+    "id": "10005",
+    "name": "Wizaplace",
+    "key": "WIZ"
+  }
 }
