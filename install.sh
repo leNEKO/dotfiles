@@ -6,7 +6,7 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # cli tools
 function tools_cfg(){
-    sudo apt install -y vim curl
+    sudo apt-get install -y vim curl
 }
 
 # bash
