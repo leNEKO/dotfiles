@@ -6,14 +6,12 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # cli tools
 function tools_cfg(){
-    sudo apt install -y \
-        fzf ripgrep fd-find \
-        vim curl
+    sudo apt-get install -y vim curl
 }
 
 # bash
 function bash_cfg(){
-    for f in $(~/.cargo/bin/fd . -t f bash); do
+    for f in $(find bash -type f -not -path '*/\.*'); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
@@ -33,7 +31,7 @@ function vscode_cfg(){
     # config files
     VS_DIR=$(echo ~/.config/Code)
     VS_DATA="vscode/data"
-    for f in $(~/.cargo/bin/fd . -t f $VS_DATA); do
+    for f in $(find $VS_DATA -type f -not -path '*/\.*'); do
         in=$DIR/$f
         out=$VS_DIR/${f/$VS_DATA\/}
         ln -sfv $in $out

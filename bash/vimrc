@@ -1,6 +1,4 @@
 " Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
 " GIT
@@ -15,6 +13,7 @@ Plug 'ajh17/vimcompletesme' " autocomplete
 " UI
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 
 " PHP
@@ -29,8 +28,10 @@ set nu
 set updatetime=100
 set mouse=a
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set hls is " hilight search
 
 " Theme
 colo gruvbox
 set bg=dark
+hi Normal ctermbg=none
 
