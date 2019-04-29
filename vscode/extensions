@@ -7,12 +7,12 @@ CoenraadS.bracket-pair-colorizer-2
 DavidAnson.vscode-markdownlint
 dawhite.mustache
 daylerees.rainglow
-DEVSENSE.phptools-vscode
 eamodio.gitlens
 EditorConfig.EditorConfig
 felixfbecker.php-debug
 felixfbecker.php-intellisense
 felixfbecker.php-pack
+fterrag.vscode-php-cs-fixer
 GitHub.vscode-pull-request-github
 hangxingliu.vscode-nginx-conf-hint
 humao.rest-client
