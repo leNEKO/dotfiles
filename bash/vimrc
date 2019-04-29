@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf' " fuzzy search
 Plug 'tpope/vim-surround' " quoting/parenthesis
 Plug 'ajh17/vimcompletesme' " autocomplete
+Plug 'scrooloose/syntastic'
 
 " UI
 Plug 'scrooloose/nerdtree'
