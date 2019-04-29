@@ -6,7 +6,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Feature
-Plug 'junegunn/fzf' " fuzzy search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " fuzzy search
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround' " quoting/parenthesis
 Plug 'ajh17/vimcompletesme' " autocomplete
 Plug 'scrooloose/syntastic'
@@ -36,3 +37,6 @@ colo gruvbox
 set bg=dark
 hi Normal ctermbg=none
 
+" Shortcut
+nmap <C-P> :Files <CR>
+nmap <C-$> :Commands <CR>
