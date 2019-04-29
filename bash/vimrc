@@ -39,4 +39,3 @@ hi Normal ctermbg=none
 
 " Shortcut
 nmap <C-P> :Files <CR>
-nmap <C-$> :Commands <CR>
