@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#set -e
 
 # working dir
 export DIR
@@ -36,6 +37,8 @@ function vscode_cfg(){
         out=$VS_DIR/${f/$VS_DATA\/}
         ln -sfv $in $out
     done
+
+    vscode_ext
 }
 
 function vscode_ext(){
@@ -44,7 +47,6 @@ function vscode_ext(){
 
     diff $VS_EXT <(code --list-extensions) |\
     while read c; do
-
         mode=${c:0:1}
         ext=${c:2}
 
@@ -58,14 +60,39 @@ function vscode_ext(){
     done
 }
 
+function composer_install(){
+    EXPECTED_SIGNATURE="$(curl  https://composer.github.io/installer.sig)"
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    ACTUAL_SIGNATURE="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+
+    if [ "$EXPECTED_SIGNATURE" != "$ACTUAL_SIGNATURE" ]; then
+        >&2 echo 'ERROR: Invalid installer signature'
+        rm composer-setup.php
+
+        exit 1
+    fi
+
+    php composer-setup.php --install-dir="$HOME/bin" --filename=composer
+
+    RESULT=$?
+    rm composer-setup.php
+    
+    return $RESULT
+}
+
+function composer_require(){
+    composer global require "squizlabs/php_codesniffer=*"
+    composer global require "phpmd/phpmd"
+}
+
 function main(){
-    tools_cfg
+    hash apt-get 2>&1 && tools_cfg
     bash_cfg
     vim_cfg
-    if hash code 2>/dev/null; then
-        vscode_cfg
-        vscode_ext
-    fi
+    hash code 2>&1 && vscode_cfg
+    hash php 2>&1 && composer_install
+    hash composer 2>&1 && composer_require
+
     exit 0
 }
 
