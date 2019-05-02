@@ -11,6 +11,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround' " quoting/parenthesis
 Plug 'ajh17/vimcompletesme' " autocomplete
 Plug 'w0rp/ale' " linter
+Plug 'ludovicchabant/vim-gutentags'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -37,6 +38,12 @@ let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = { 'php': ['trim_whitespace'] } 
 let g:ale_php_phpcs_standard = 'PSR2'
+let g:gutentags_cache_dir = '~/.vim/gutentags'
+let g:gutentags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
+                            \ '*.phar', '*.ini', '*.rst', '*.md',
+                            \ '*vendor/*/test*', '*vendor/*/Test*',
+                            \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
+                            \ '*var/cache*', '*var/log*']
 
 " Theme
 colo gruvbox
