@@ -85,6 +85,15 @@ function composer_require(){
     composer global require "phpmd/phpmd"
 }
 
+function rust_tools(){
+    # TODO :
+    # - rustup + cargo
+    # - exa (ls)
+    # - rg (grep)
+    # - fd (find)
+    # - bat (cat)
+}
+
 function main(){
     hash apt-get 2>&1 && tools_cfg
     bash_cfg
