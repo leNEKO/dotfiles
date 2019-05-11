@@ -92,6 +92,8 @@ function rust_tools(){
     # - rg (grep)
     # - fd (find)
     # - bat (cat)
+
+    return 0
 }
 
 function main(){
