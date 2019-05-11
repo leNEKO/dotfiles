@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # exercism shortcut
-alias exercism='. ~/dev/py/exism/exism.sh exercism'
+hash exercism 2>&1 && alias exercism='. ~/dev/py/exism/exism.sh exercism'
 
 # bitwig-studio
-alias bitwig-studio='pasuspender bitwig-studio'
+hash bitwig-studio 2>&1 && alias bitwig-studio='pasuspender bitwig-studio'
 
 # tracktion
-alias Trackion7='pasusupender Tracktion7'
+hash Tracktion7 2>&1 && alias Trackion7='pasusupender Tracktion7'
 
 # sunvox
-#alias sunvox='pasuspender sunvox'
+hash sunvox 2>&1 && alias sunvox='pasuspender sunvox'
