@@ -25,18 +25,16 @@ Plug 'shawncplus/phpcomplete.vim'
 " Initialize plugin system
 call plug#end()
 
-" UI settings
-set nu
-set updatetime=100
-set mouse=a
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
-set hls is " hilight search
-
 " Plugins settings
+
+" ale linter
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = { 'php': ['trim_whitespace'] } 
 let g:ale_php_phpcs_standard = 'PSR2'
+let g:ale_sign_error = '❌️'
+
+" gutentags
 let g:gutentags_cache_dir = '~/.vim/gutentags'
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
                             \ '*.phar', '*.ini', '*.rst', '*.md',
@@ -44,10 +42,19 @@ let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.js', '*.json', '*.xml',
                             \ '*vendor/*/fixture*', '*vendor/*/Fixture*',
                             \ '*var/cache*', '*var/log*']
 
+
+" Shortcuts
+nmap <F2> :Files <CR>
+nmap <F3> :Rg <CR>
+
 " Theme
 colo gruvbox
 set bg=dark
 hi Normal ctermbg=none
 
-" Shortcuts
-nmap <C-P> :Files <CR>
+" UI settings
+set nu
+set updatetime=100
+set mouse=a
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set hls is " hilight search

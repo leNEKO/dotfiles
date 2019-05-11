@@ -12,7 +12,7 @@ function tools_cfg(){
 
 # bash
 function bash_cfg(){
-    for f in $(find bash -type f -not -path '*/\.*'); do
+    for f in $(find shell -type f -not -path '*/\.*'); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
