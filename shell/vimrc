@@ -11,6 +11,8 @@ Plug 'tpope/vim-surround' " quoting/parenthesis
 Plug 'ajh17/vimcompletesme' " autocomplete
 Plug 'w0rp/ale' " linter
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'osyo-manga/vim-over'
+Plug 'dominics/vim-filetype-xdebug'
 
 " UI
 Plug 'scrooloose/nerdtree'
