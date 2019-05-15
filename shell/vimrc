@@ -13,6 +13,7 @@ Plug 'w0rp/ale' " linter
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'osyo-manga/vim-over'
 Plug 'dominics/vim-filetype-xdebug'
+Plug 'cespare/vim-toml'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -32,7 +33,7 @@ call plug#end()
 " ale linter
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
-let g:ale_fixers = { 'php': ['trim_whitespace'] } 
+let g:ale_fixers = { 'php': ['trim_whitespace'] }
 let g:ale_php_phpcs_standard = 'PSR2'
 let g:ale_sign_error = '❌️'
 let g:ale_sign_warning = '⚠️ '
