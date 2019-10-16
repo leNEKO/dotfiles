@@ -8,7 +8,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -68,7 +67,7 @@
   "terminal.integrated.fontSize": 12,
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Codecourse Contrast (rainglow)",
+  "workbench.colorTheme": "Shades of Purple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "statusBar.background": "#000",
@@ -101,5 +100,7 @@
   },
   "yaml.schemas": {
     "file:///home/nicolas/.vscode/extensions/atlassian.atlascode-1.3.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  },
+  "phpcs.executablePath": "/home/neko/.composer/vendor/bin/phpcs",
+  "editor.formatOnSave": true
 }
