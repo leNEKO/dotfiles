@@ -52,6 +52,9 @@ hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Disable touch screen
-xinput disable 10
-xinput disable 11
+if $(hash xinput 2>/dev/null)
+then
+    xinput disable 10
+    xinput disable 11
+fi
 
