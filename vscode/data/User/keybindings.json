@@ -1,15 +1,13 @@
 // Placez vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
 [
   {
-    "key": "ctrl+shift+t",
-    "command": "workbench.action.tasks.test"
+    "key": "alt+left",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+meta+left",
-    "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "ctrl+meta+right",
-    "command": "workbench.action.navigateForward"
+    "key": "alt+right",
+    "command": "workbench.action.navigateForward",
+    "when": "editorTextFocus"
   }
 ]

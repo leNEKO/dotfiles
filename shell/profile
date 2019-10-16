@@ -50,3 +50,8 @@ hash rbenv 2>/dev/null && eval "$(rbenv init -)"
 
 # Dotnet no telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Disable touch screen
+xinput disable 10
+xinput disable 11
+

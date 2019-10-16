@@ -7,7 +7,17 @@ DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # cli tools
 function tools_cfg(){
-    sudo apt-get install -y vim curl
+    sudo apt-get install -y vim curl php-cli php-json php-curl
+}
+
+# bashit
+function bashit_install(){
+    if [[ -d $HOME/.bash_it ]]; then
+        bash-it update
+        return $?
+    fi
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    ~/.bash_it/install.sh
 }
 
 # bash
@@ -61,7 +71,7 @@ function vscode_ext(){
 }
 
 function composer_install(){
-    EXPECTED_SIGNATURE="$(curl  https://composer.github.io/installer.sig)"
+    EXPECTED_SIGNATURE="$(curl https://composer.github.io/installer.sig)"
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     ACTUAL_SIGNATURE="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
 
@@ -76,7 +86,7 @@ function composer_install(){
 
     RESULT=$?
     rm composer-setup.php
-    
+
     return $RESULT
 }
 
@@ -98,6 +108,7 @@ function rust_tools(){
 
 function main(){
     hash apt-get 2>&1 && tools_cfg
+    bashit_install
     bash_cfg
     vim_cfg
     hash code 2>&1 && vscode_cfg
