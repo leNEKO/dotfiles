@@ -82,6 +82,7 @@ function composer_install(){
         exit 1
     fi
 
+    mkdir -p $HOME/bin
     php composer-setup.php --install-dir="$HOME/bin" --filename=composer
 
     RESULT=$?

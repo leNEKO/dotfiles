@@ -13,6 +13,7 @@ Plug 'w0rp/ale' " linter
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'osyo-manga/vim-over'
 Plug 'cespare/vim-toml'
+Plug 'scrooloose/nerdcommenter'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -113,4 +114,3 @@ command! -bang -nargs=* Rg
 " Likewise, Files command with preview window
 command! -bang -nargs=? -complete=dir Files
             \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
-
