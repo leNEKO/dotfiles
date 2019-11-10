@@ -92,8 +92,11 @@ function composer_install(){
 }
 
 function composer_require(){
+    composer global upgrade
     composer global require "squizlabs/php_codesniffer=*"
     composer global require "phpmd/phpmd"
+    composer global require "friendsofphp/php-cs-fixer"
+    composer global require "friendsoftwig/twigcs"
 }
 
 function rust_tools(){
