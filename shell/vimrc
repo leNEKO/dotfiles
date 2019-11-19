@@ -25,9 +25,14 @@ Plug 'morhetz/gruvbox'
 Plug 'stanangeloff/php.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'dominics/vim-filetype-xdebug'
+Plug 'arnaud-lb/vim-php-namespace'
+Plug 'evidens/vim-twig'
 
 " Rust
 Plug 'rust-lang/rust.vim'
+
+" DB
+Plug 'tpope/vim-dadbod'
 
 " Initialize plugin system
 call plug#end()
@@ -40,6 +45,7 @@ let g:ale_fix_on_save = 1
 let g:ale_fixers = {
             \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
             \ 'php': ['php_cs_fixer'],
+            \ 'twig': ['prettier'],
             \ 'python': [],
             \}
 let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
