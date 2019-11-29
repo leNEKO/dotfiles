@@ -39,6 +39,9 @@ call plug#end()
 
 " Plugins settings
 
+inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
+
 " ale linter
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
