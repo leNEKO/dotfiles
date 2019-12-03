@@ -14,6 +14,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'osyo-manga/vim-over'
 Plug 'cespare/vim-toml'
 Plug 'scrooloose/nerdcommenter'
+Plug 'chr4/nginx.vim'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -49,7 +50,7 @@ let g:ale_fixers = {
             \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
             \ 'php': ['php_cs_fixer'],
             \ 'twig': ['prettier'],
-            \ 'python': [],
+            \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
             \}
 let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
 let g:ale_php_phpcs_standard = 'PSR2'
