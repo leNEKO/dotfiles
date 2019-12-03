@@ -51,6 +51,7 @@ let g:ale_fixers = {
             \ 'php': ['php_cs_fixer'],
             \ 'twig': ['prettier'],
             \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
+            \ 'html': ['prettier']
             \}
 let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
 let g:ale_php_phpcs_standard = 'PSR2'
