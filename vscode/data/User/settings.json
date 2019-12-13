@@ -107,5 +107,6 @@
   "gitlens.views.lineHistory.location": "scm",
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
-  "php.validate.enable": false
+  "php.validate.enable": false,
+  "diffEditor.ignoreTrimWhitespace": true
 }

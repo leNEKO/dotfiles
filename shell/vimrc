@@ -15,6 +15,7 @@ Plug 'osyo-manga/vim-over'
 Plug 'cespare/vim-toml'
 Plug 'scrooloose/nerdcommenter'
 Plug 'chr4/nginx.vim'
+Plug 'joonty/vdebug' " Debugger
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -39,6 +40,9 @@ Plug 'tpope/vim-dadbod'
 call plug#end()
 
 " Plugins settings
+
+" Debugger mapping
+let g:vdebug_options = {"path_maps": {"/var/www/html": "/home/neko/dev/wizaplace"}}
 
 inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
 noremap <Leader>u :call PhpInsertUse()<CR>

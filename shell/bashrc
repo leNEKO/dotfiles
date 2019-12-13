@@ -174,3 +174,8 @@ source "$HOME"/.aliases
 
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/home/neko'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
