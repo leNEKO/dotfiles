@@ -22,7 +22,7 @@ function bashit_install(){
 
 # bash
 function bash_cfg(){
-    for f in $(find shell -type f -not -path '*/\.*'); do
+    for f in $(ls shell); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
@@ -42,7 +42,7 @@ function vscode_cfg(){
     # config files
     VS_DIR=$(echo ~/.config/Code)
     VS_DATA="vscode/data"
-    for f in $(find $VS_DATA -type f -not -path '*/\.*'); do
+    for f in $(find $VS_DATA -not -path '*/\.*'); do
         in=$DIR/$f
         out=$VS_DIR/${f/$VS_DATA\/}
         ln -sfv $in $out

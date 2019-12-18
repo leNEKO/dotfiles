@@ -108,5 +108,6 @@
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
   "php.validate.enable": false,
-  "diffEditor.ignoreTrimWhitespace": true
+  "diffEditor.ignoreTrimWhitespace": true,
+  "terminal.integrated.rendererType": "dom"
 }

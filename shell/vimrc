@@ -16,6 +16,7 @@ Plug 'cespare/vim-toml'
 Plug 'scrooloose/nerdcommenter'
 Plug 'chr4/nginx.vim'
 Plug 'joonty/vdebug' " Debugger
+Plug 'mustache/vim-mustache-handlebars'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -42,7 +43,13 @@ call plug#end()
 " Plugins settings
 
 " Debugger mapping
-let g:vdebug_options = {"path_maps": {"/var/www/html": "/home/neko/dev/wizaplace"}}
+let g:vdebug_options = {
+    \"path_maps":
+        \{
+            \"/var/www/html": "/home/neko/dev/wizaplace",
+            \"/var/www/app": "/home/neko/dev/hurleur-cms",
+        \}
+    \}
 
 inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
 noremap <Leader>u :call PhpInsertUse()<CR>
