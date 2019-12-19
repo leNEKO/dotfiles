@@ -109,5 +109,6 @@
   "gitlens.views.search.location": "scm",
   "php.validate.enable": false,
   "diffEditor.ignoreTrimWhitespace": true,
-  "terminal.integrated.rendererType": "dom"
+  "terminal.integrated.rendererType": "dom",
+  "php.memoryLimit": "512M"
 }

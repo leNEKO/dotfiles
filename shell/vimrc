@@ -17,6 +17,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'chr4/nginx.vim'
 Plug 'joonty/vdebug' " Debugger
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'mrk21/yaml-vim'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -30,6 +31,7 @@ Plug 'shawncplus/phpcomplete.vim'
 Plug 'dominics/vim-filetype-xdebug'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'evidens/vim-twig'
+Plug 'vim-vdebug/vdebug'
 
 " Rust
 Plug 'rust-lang/rust.vim'
@@ -46,8 +48,8 @@ call plug#end()
 let g:vdebug_options = {
     \"path_maps":
         \{
-            \"/var/www/html": "/home/neko/dev/wizaplace",
-            \"/var/www/app": "/home/neko/dev/hurleur-cms",
+            \"/var/www/html": "~/dev/wizaplace",
+            \"/var/www/app": "~/dev/hurleur-cms",
         \}
     \}
 
@@ -61,6 +63,8 @@ let g:ale_fixers = {
             \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
             \ 'php': ['php_cs_fixer'],
             \ 'twig': ['prettier'],
+            \ 'yaml': ['prettier'],
+            \ 'json': ['jq'],
             \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
             \ 'html': ['prettier']
             \}
