@@ -22,7 +22,7 @@ function bashit_install(){
 
 # bash
 function bash_cfg(){
-    for f in $(ls shell); do
+    for f in $(find shell -type f -not -path '*/\.*'); do
         in="$DIR/$f"
         out=$(echo ~/.${f##*/})
         ln -sfv $in $out
