@@ -59,6 +59,8 @@ noremap <Leader>u :call PhpInsertUse()<CR>
 " ale linter
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_enter = 0
 let g:ale_fixers = {
             \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
             \ 'php': ['php_cs_fixer'],
@@ -66,7 +68,8 @@ let g:ale_fixers = {
             \ 'yaml': ['prettier'],
             \ 'json': ['jq'],
             \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
-            \ 'html': ['prettier']
+            \ 'html': ['prettier'],
+            \ 'css': ['prettier']
             \}
 let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
 let g:ale_php_phpcs_standard = 'PSR2'

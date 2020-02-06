@@ -31,20 +31,11 @@
     ".env.*": "dotenv",
     "bashrc": "shellscript",
     "profile": "shellscript",
-    ".env.*": "dotenv"
   },
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "go.inferGopath": true,
-  "go.toolsGopath": "~/go",
-  "logViewer.watch": [
-    {
-      "pattern": "var/log*/*.log",
-      "title": "Symfony"
-    }
-  ],
   "namespaceResolver.sortAlphabetically": true,
   "namespaceResolver.sortNatural": true,
   "python.linting.pylintUseMinimalCheckers": false,
@@ -77,30 +68,6 @@
   },
   "namespaceResolver.leadingSeparator": true,
   "php.suggest.basic": false,
-  "phpcs.standard": "PSR2",
-  "jira-plugin.workingProject": "WIZ",
-  "jira-plugin.baseUrl": "https://wizaplace.atlassian.net",
-  "jira-plugin.username": "nicolas.masson@wizacha.com",
-  "atlascode.jira.workingSite": {
-    "id": "65c760bb-0ae6-48fd-9738-f374eeb691d6",
-    "name": "wizaplace",
-    "scopes": [
-      "manage:jira-project",
-      "write:jira-work",
-      "read:jira-work",
-      "read:jira-user"
-    ],
-    "avatarUrl": "https://site-admin-avatar-cdn.prod.public.atl-paas.net/avatars/240/triangle.png",
-    "baseUrlSuffix": "atlassian.net"
-  },
-  "atlascode.jira.workingProject": {
-    "id": "10005",
-    "name": "Wizaplace",
-    "key": "WIZ"
-  },
-  "yaml.schemas": {
-    "file:///home/nicolas/.vscode/extensions/atlassian.atlascode-1.3.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
   "python.dataScience.askForKernelRestart": false,
   "gitlens.views.repositories.location": "scm",
   "gitlens.views.fileHistory.location": "scm",
