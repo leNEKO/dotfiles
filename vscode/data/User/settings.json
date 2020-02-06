@@ -12,7 +12,7 @@
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.snippetSuggestions": "top",
   "editor.rulers": [
     80,
@@ -63,7 +63,7 @@
     "nightlyToolchain": "nightly-x86_64-unknown-linux-gnu",
     "toolchain": "stable-x86_64-unknown-linux-gnu"
   },
-  "terminal.integrated.fontFamily": "Fira code",
+  "terminal.integrated.fontFamily": "Operator Mono Lig Book",
   "terminal.integrated.fontSize": 12,
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
@@ -108,7 +108,17 @@
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
   "php.validate.enable": false,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "terminal.integrated.rendererType": "dom",
-  "php.memoryLimit": "512M"
+  "php.memoryLimit": "512M",
+  "debug.console.fontFamily": "Operator Mono Lig Book",
+  "gitlens.views.repositories.files.layout": "tree",
+  "task.autoDetect": "off",
+  "editor.highlightActiveIndentGuide": false,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 2px",
+    "borderColor : {color}",
+    "opacity: 1"
+  ]
 }
