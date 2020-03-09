@@ -87,5 +87,12 @@
     "borderWidth : 2px",
     "borderColor : {color}",
     "opacity: 1"
-  ]
+  ],
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "kite.showWelcomeNotificationOnStartup": false,
+  "local-history.absolute": true,
+  "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style,-new_line_for_chained_calls",
+  "vscode-php-cs-fixer.config": ".php_cs"
 }
