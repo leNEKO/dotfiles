@@ -18,6 +18,7 @@ Plug 'chr4/nginx.vim'
 Plug 'joonty/vdebug' " Debugger
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mrk21/yaml-vim'
+Plug 'mechatroner/rainbow_csv' " Csv nice formater
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -27,7 +28,7 @@ Plug 'morhetz/gruvbox'
 
 " PHP
 Plug 'stanangeloff/php.vim'
-Plug 'shawncplus/phpcomplete.vim'
+Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'dominics/vim-filetype-xdebug'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'evidens/vim-twig'
