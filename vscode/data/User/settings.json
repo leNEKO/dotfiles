@@ -75,7 +75,7 @@
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
   "php.validate.enable": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "terminal.integrated.rendererType": "dom",
   "php.memoryLimit": "512M",
   "debug.console.fontFamily": "Operator Mono Lig Book",
@@ -91,4 +91,8 @@
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
+  "kite.showWelcomeNotificationOnStartup": false,
+  "local-history.absolute": true,
+  "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style,-new_line_for_chained_calls",
+  "vscode-php-cs-fixer.config": ".php_cs"
 }
