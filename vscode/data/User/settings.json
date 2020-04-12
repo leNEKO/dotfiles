@@ -57,7 +57,7 @@
   "terminal.integrated.fontFamily": "Operator Mono Lig Book",
   "terminal.integrated.fontSize": 12,
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
@@ -87,5 +87,8 @@
     "borderWidth : 2px",
     "borderColor : {color}",
     "opacity: 1"
-  ]
+  ],
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
 }
