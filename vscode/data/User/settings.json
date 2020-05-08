@@ -58,7 +58,6 @@
   "terminal.integrated.fontSize": 12,
   "window.titleBarStyle": "custom",
   "window.zoomLevel": -1,
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "statusBar.background": "#000",
@@ -94,5 +93,6 @@
   "kite.showWelcomeNotificationOnStartup": false,
   "local-history.absolute": true,
   "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style,-new_line_for_chained_calls",
-  "vscode-php-cs-fixer.config": ".php_cs"
+  "vscode-php-cs-fixer.config": ".php_cs",
+  "timeline.excludeSources": []
 }

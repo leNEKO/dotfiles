@@ -19,3 +19,7 @@ then
     alias ll="l --git -l"
     alias lll="ll --tree"
 fi
+
+# xclip
+hash xclip 2>/dev/null && alias xclip='xclip -selection clipboard'
+
