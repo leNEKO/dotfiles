@@ -9,7 +9,8 @@ Plug 'vim-scripts/sudo.vim' " sudo
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround' " quoting/parenthesis
-Plug 'ajh17/vimcompletesme' " autocomplete
+" Plug 'ajh17/vimcompletesme' " autocomplete
+Plug 'shougo/deoplete.nvim' " autocomplete
 Plug 'w0rp/ale' " linter
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'osyo-manga/vim-over'
