@@ -39,6 +39,9 @@ Plug 'vim-vdebug/vdebug'
 " Rust
 Plug 'rust-lang/rust.vim'
 
+" Go
+Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries' }
+
 " DB
 Plug 'tpope/vim-dadbod'
 
@@ -102,7 +105,7 @@ hi Normal ctermbg=none
 set nu
 set updatetime=100
 set mouse=a
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set hls is " hilight search
 set foldmethod=indent
 set foldlevel=99
