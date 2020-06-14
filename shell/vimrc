@@ -36,6 +36,9 @@ Plug 'arnaud-lb/vim-php-namespace'
 Plug 'evidens/vim-twig'
 Plug 'vim-vdebug/vdebug'
 
+" Python
+Plug 'davidhalter/jedi-vim'
+
 " Rust
 Plug 'rust-lang/rust.vim'
 
