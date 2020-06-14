@@ -23,3 +23,6 @@ fi
 # xclip
 hash xclip 2>/dev/null && alias xclip='xclip -selection clipboard'
 
+# workbench
+hash mysql-workbench && alias mysql-workbench='GTK_THEME=Yaru mysql-workbench'
+

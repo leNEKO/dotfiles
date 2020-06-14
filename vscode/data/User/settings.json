@@ -41,7 +41,7 @@
   "terminal.integrated.fontFamily": "Operator Mono Lig Book",
   "terminal.integrated.fontSize": 12,
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "statusBar.background": "#000",
@@ -72,10 +72,12 @@
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
+  "kite.showWelcomeNotificationOnStartup": false,
   "phpcs.executablePath": "/home/neko/.composer/vendor/bin/phpcs",
   "phpcs.showSources": true,
   "intelephense.environment.phpVersion": "7.2.0",
-  "python.jediEnabled": false,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "local-history.absolute": true,
+  "vscode-php-cs-fixer.rules": "@PSR1,@PSR2,@Symfony,-yoda_style,-new_line_for_chained_calls",
+  "vscode-php-cs-fixer.config": ".php_cs",
+  "timeline.excludeSources": []
 }
