@@ -179,3 +179,5 @@ source "$HOME"/.aliases
 HOME=${HOME:-'/home/neko'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+[[ -s "/home/neko/.gvm/scripts/gvm" ]] && source "/home/neko/.gvm/scripts/gvm"

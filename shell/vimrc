@@ -17,10 +17,10 @@ Plug 'osyo-manga/vim-over'
 Plug 'cespare/vim-toml'
 Plug 'scrooloose/nerdcommenter'
 Plug 'chr4/nginx.vim'
-Plug 'joonty/vdebug' " Debugger
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mrk21/yaml-vim'
 Plug 'mechatroner/rainbow_csv' " Csv nice formater
+Plug 'vim-vdebug/vdebug'
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -30,11 +30,10 @@ Plug 'morhetz/gruvbox'
 
 " PHP
 Plug 'stanangeloff/php.vim'
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+"Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 Plug 'dominics/vim-filetype-xdebug'
 Plug 'arnaud-lb/vim-php-namespace'
 Plug 'evidens/vim-twig'
-Plug 'vim-vdebug/vdebug'
 
 " Python
 Plug 'davidhalter/jedi-vim'
@@ -43,7 +42,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'rust-lang/rust.vim'
 
 " Go
-Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries' }
+Plug 'fatih/vim-go'
 
 " DB
 Plug 'tpope/vim-dadbod'
@@ -69,19 +68,21 @@ noremap <Leader>u :call PhpInsertUse()<CR>
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_save = 1
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 let g:ale_fixers = {
-            \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
-            \ 'php': ['php_cs_fixer'],
-            \ 'twig': ['prettier'],
-            \ 'yaml': ['prettier'],
-            \ 'json': ['jq'],
-            \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
-            \ 'html': ['prettier'],
-            \ 'css': ['prettier']
-            \}
+    \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
+    \ 'php': ['php_cs_fixer', 'phpcbf'],
+    \ 'twig': ['prettier'],
+    \ 'yaml': ['prettier'],
+    \ 'json': ['jq'],
+    \ 'python': ['autopep8','isort','add_blank_lines_for_python_control_statements'],
+    \ 'html': ['prettier'],
+    \ 'css': ['prettier']
+\}
+let g:ale_php_phpcbf_use_global = 1
+let g:ale_php_cs_fixer_use_global = 1
 let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
-let g:ale_php_phpcs_standard = 'PSR2'
+let g:ale_php_phpcs_use_global = 1
 let g:ale_sign_error = '❌️'
 " let g:ale_sign_error = '🚩️
 let g:ale_sign_warning = '⚠️ '
