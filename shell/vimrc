@@ -44,6 +44,10 @@ Plug 'rust-lang/rust.vim'
 " Go
 Plug 'fatih/vim-go'
 
+" Nim
+Plug 'zah/nim.vim'
+" Plug 'alaviss/nim.nvim'
+
 " DB
 Plug 'tpope/vim-dadbod'
 
@@ -72,6 +76,7 @@ let g:ale_lint_on_enter = 1
 let g:ale_fixers = {
     \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
     \ 'php': ['php_cs_fixer', 'phpcbf'],
+    \ 'nim': ['nimpretty'],
     \ 'twig': ['prettier'],
     \ 'yaml': ['prettier'],
     \ 'json': ['jq'],
@@ -113,6 +118,19 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set hls is " hilight search
 set foldmethod=indent
 set foldlevel=99
+
+" for Nim
+fun! JumpToDef()
+  if exists("*GotoDefinition_" . &filetype)
+    call GotoDefinition_{&filetype}()
+  else
+    exe "norm! \<C-]>"
+  endif
+endf
+
+" Jump to tag
+nn <M-g> :call JumpToDef()<cr>
+ino <M-g> <esc>:call JumpToDef()<cr>i
 
 " FZF
 " Command for git grep
