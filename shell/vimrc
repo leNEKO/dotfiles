@@ -21,6 +21,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'mrk21/yaml-vim'
 Plug 'mechatroner/rainbow_csv' " Csv nice formater
 Plug 'vim-vdebug/vdebug'
+Plug 'embear/vim-localvimrc' " Local .lvimrc
 
 " UI
 Plug 'scrooloose/nerdtree'
@@ -75,7 +76,7 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 1
 let g:ale_fixers = {
     \ '*': ['trim_whitespace','remove_trailing_lines','isort'],
-    \ 'php': ['php_cs_fixer', 'phpcbf'],
+    \ 'php': ['php_cs_fixer','phpcbf'],
     \ 'nim': ['nimpretty'],
     \ 'twig': ['prettier'],
     \ 'yaml': ['prettier'],
@@ -84,9 +85,11 @@ let g:ale_fixers = {
     \ 'html': ['prettier'],
     \ 'css': ['prettier']
 \}
+let g:ale_php_phpcbf_standard = "PSR12"
 let g:ale_php_phpcbf_use_global = 1
 let g:ale_php_cs_fixer_use_global = 1
-let g:ale_php_cs_fixer_options = "--rules=@PSR1,@PSR2,@Symfony"
+let g:ale_php_cs_fixer_options = "--rules=@PSR12,@Symfony"
+let g:ale_php_phpcs_standard = "PSR12"
 let g:ale_php_phpcs_use_global = 1
 let g:ale_sign_error = '❌️'
 " let g:ale_sign_error = '🚩️

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mpv --ytdl-format=720p60 https://www.twitch.tv/$1
